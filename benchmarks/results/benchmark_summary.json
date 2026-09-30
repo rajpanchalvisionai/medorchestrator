@@ -1,0 +1,3410 @@
+{
+  "total_sessions_in_dataset": 66,
+  "sessions_completed": 66,
+  "summary_metrics": {
+    "Full-Context Baseline": {
+      "implicit_reference_f1": 43.3,
+      "epistemic_discrepancy_acc": 0.0,
+      "telemetry_fusion_acc": 0.0,
+      "distractor_noise_avg_tokens": 568,
+      "doctor_audit_acc": 83.8,
+      "overall_avg_tokens": 437,
+      "median_latency_e2e_s": 1.75,
+      "graph_traversal_latency_ms": 0.0,
+      "distractor_token_compression_pct": 0.0,
+      "mean_token_reduction_pct": 0.0
+    },
+    "Vector-RAG Baseline": {
+      "implicit_reference_f1": 81.5,
+      "epistemic_discrepancy_acc": 0.0,
+      "telemetry_fusion_acc": 0.0,
+      "distractor_noise_avg_tokens": 119,
+      "doctor_audit_acc": 86.7,
+      "overall_avg_tokens": 150,
+      "median_latency_e2e_s": 3.03,
+      "graph_traversal_latency_ms": 0.0,
+      "distractor_token_compression_pct": 79.0,
+      "mean_token_reduction_pct": 65.7
+    },
+    "Dual-Layer Graph Memory": {
+      "implicit_reference_f1": 79.0,
+      "epistemic_discrepancy_acc": 100.0,
+      "telemetry_fusion_acc": 100.0,
+      "distractor_noise_avg_tokens": 164,
+      "doctor_audit_acc": 85.7,
+      "overall_avg_tokens": 172,
+      "median_latency_e2e_s": 3.19,
+      "graph_traversal_latency_ms": 679.5,
+      "distractor_token_compression_pct": 71.1,
+      "mean_token_reduction_pct": 60.6
+    }
+  },
+  "session_evaluations": [
+    {
+      "session_id": "eval_user1_sess_01",
+      "patient_id": "user_1",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 397,
+      "latency_e2e_seconds": 7.587134399916977,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_01",
+      "patient_id": "user_1",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 148,
+      "latency_e2e_seconds": 15.634704099968076,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_01",
+      "patient_id": "user_1",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 161,
+      "latency_e2e_seconds": 10.859941700007766,
+      "latency_graph_ms": 3653.335200040601,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_01",
+      "patient_id": "user_2",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 378,
+      "latency_e2e_seconds": 8.231618399964646,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_01",
+      "patient_id": "user_2",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 134,
+      "latency_e2e_seconds": 8.920401499955915,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_01",
+      "patient_id": "user_2",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 145,
+      "latency_e2e_seconds": 7.730257900082506,
+      "latency_graph_ms": 2673.1542999623343,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_01",
+      "patient_id": "user_3",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 378,
+      "latency_e2e_seconds": 8.575465700007044,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_01",
+      "patient_id": "user_3",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 123,
+      "latency_e2e_seconds": 6.302965500042774,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_01",
+      "patient_id": "user_3",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 139,
+      "latency_e2e_seconds": 8.894628199981526,
+      "latency_graph_ms": 2275.4003000445664,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_01",
+      "patient_id": "user_4",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 381,
+      "latency_e2e_seconds": 3.899307499988936,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_01",
+      "patient_id": "user_4",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 124,
+      "latency_e2e_seconds": 6.305172899970785,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_01",
+      "patient_id": "user_4",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 134,
+      "latency_e2e_seconds": 7.501220199977979,
+      "latency_graph_ms": 2284.544500056654,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_01",
+      "patient_id": "user_5",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 371,
+      "latency_e2e_seconds": 1.5520829999586567,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_01",
+      "patient_id": "user_5",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 121,
+      "latency_e2e_seconds": 2.760427700006403,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_01",
+      "patient_id": "user_5",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 116,
+      "latency_e2e_seconds": 4.224698600010015,
+      "latency_graph_ms": 1785.1270999526605,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_01",
+      "patient_id": "user_6",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 369,
+      "latency_e2e_seconds": 1.6491991999791935,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_01",
+      "patient_id": "user_6",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 124,
+      "latency_e2e_seconds": 2.393078300054185,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_01",
+      "patient_id": "user_6",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 118,
+      "latency_e2e_seconds": 4.6005452000536025,
+      "latency_graph_ms": 1732.2417000541463,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_01",
+      "patient_id": "user_7",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 364,
+      "latency_e2e_seconds": 5.050362199894153,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_01",
+      "patient_id": "user_7",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 118,
+      "latency_e2e_seconds": 3.0003488999791443,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_01",
+      "patient_id": "user_7",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 148,
+      "latency_e2e_seconds": 4.730574900051579,
+      "latency_graph_ms": 2346.897799987346,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_01",
+      "patient_id": "user_8",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 403,
+      "latency_e2e_seconds": 1.824312899960205,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_01",
+      "patient_id": "user_8",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 153,
+      "latency_e2e_seconds": 3.5257362000411376,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_01",
+      "patient_id": "user_8",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 147,
+      "latency_e2e_seconds": 5.096825800021179,
+      "latency_graph_ms": 2450.9798999642953,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_01",
+      "patient_id": "user_9",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 376,
+      "latency_e2e_seconds": 1.702154599945061,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_01",
+      "patient_id": "user_9",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 130,
+      "latency_e2e_seconds": 3.598120199982077,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_01",
+      "patient_id": "user_9",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 155,
+      "latency_e2e_seconds": 5.100537899998017,
+      "latency_graph_ms": 2541.060300078243,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_01",
+      "patient_id": "user_10",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 374,
+      "latency_e2e_seconds": 2.0401960000162944,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_01",
+      "patient_id": "user_10",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 123,
+      "latency_e2e_seconds": 3.1148729000706226,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_01",
+      "patient_id": "user_10",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 146,
+      "latency_e2e_seconds": 5.69455310003832,
+      "latency_graph_ms": 3084.3122999649495,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_01",
+      "patient_id": "user_11",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 380,
+      "latency_e2e_seconds": 1.8732479000464082,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_01",
+      "patient_id": "user_11",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 125,
+      "latency_e2e_seconds": 3.611405299976468,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_01",
+      "patient_id": "user_11",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 150,
+      "latency_e2e_seconds": 4.1707394000841305,
+      "latency_graph_ms": 1812.5363000435755,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_01",
+      "patient_id": "user_12",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 361,
+      "latency_e2e_seconds": 1.7593905000248924,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_01",
+      "patient_id": "user_12",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 115,
+      "latency_e2e_seconds": 3.0039078999543563,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_01",
+      "patient_id": "user_12",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 145,
+      "latency_e2e_seconds": 4.616876499960199,
+      "latency_graph_ms": 2452.7758999029174,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_01",
+      "patient_id": "user_13",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 368,
+      "latency_e2e_seconds": 1.8144478000467643,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_01",
+      "patient_id": "user_13",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 122,
+      "latency_e2e_seconds": 3.040590299991891,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_01",
+      "patient_id": "user_13",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 150,
+      "latency_e2e_seconds": 5.05931080004666,
+      "latency_graph_ms": 2644.91559995804,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_01",
+      "patient_id": "user_14",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 365,
+      "latency_e2e_seconds": 1.818889299989678,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_01",
+      "patient_id": "user_14",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 119,
+      "latency_e2e_seconds": 3.042715899995528,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_01",
+      "patient_id": "user_14",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 148,
+      "latency_e2e_seconds": 5.06965850002598,
+      "latency_graph_ms": 2659.7930000862107,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_01",
+      "patient_id": "user_15",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 400,
+      "latency_e2e_seconds": 1.9640045000705868,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_01",
+      "patient_id": "user_15",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 152,
+      "latency_e2e_seconds": 3.3527521999785677,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_01",
+      "patient_id": "user_15",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 160,
+      "latency_e2e_seconds": 5.049440099974163,
+      "latency_graph_ms": 2518.701500026509,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_01",
+      "patient_id": "user_16",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 385,
+      "latency_e2e_seconds": 1.8448336001019925,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_01",
+      "patient_id": "user_16",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 131,
+      "latency_e2e_seconds": 3.679373800056055,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_01",
+      "patient_id": "user_16",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 159,
+      "latency_e2e_seconds": 5.095903799985535,
+      "latency_graph_ms": 2473.8823999650776,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_01",
+      "patient_id": "user_17",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 377,
+      "latency_e2e_seconds": 1.780225900001824,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_01",
+      "patient_id": "user_17",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 136,
+      "latency_e2e_seconds": 3.1652617999352515,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_01",
+      "patient_id": "user_17",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 148,
+      "latency_e2e_seconds": 4.133289100020193,
+      "latency_graph_ms": 1970.670200069435,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user18_sess_01",
+      "patient_id": "user_18",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 382,
+      "latency_e2e_seconds": 2.138709199964069,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user18_sess_01",
+      "patient_id": "user_18",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 124,
+      "latency_e2e_seconds": 3.2571139000356197,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user18_sess_01",
+      "patient_id": "user_18",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 150,
+      "latency_e2e_seconds": 5.175523800076917,
+      "latency_graph_ms": 2503.059700015001,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user19_sess_01",
+      "patient_id": "user_19",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 369,
+      "latency_e2e_seconds": 1.863065000041388,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user19_sess_01",
+      "patient_id": "user_19",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 116,
+      "latency_e2e_seconds": 3.286095799994655,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user19_sess_01",
+      "patient_id": "user_19",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 148,
+      "latency_e2e_seconds": 5.00251580006443,
+      "latency_graph_ms": 2497.62959999498,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user20_sess_01",
+      "patient_id": "user_20",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 371,
+      "latency_e2e_seconds": 1.7340359000954777,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user20_sess_01",
+      "patient_id": "user_20",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 122,
+      "latency_e2e_seconds": 3.2070011000614613,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user20_sess_01",
+      "patient_id": "user_20",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 152,
+      "latency_e2e_seconds": 5.231426700018346,
+      "latency_graph_ms": 2485.745600075461,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_02",
+      "patient_id": "user_1",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 415,
+      "latency_e2e_seconds": 1.8043048999970779,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_02",
+      "patient_id": "user_1",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 167,
+      "latency_e2e_seconds": 3.0412415999453515,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_02",
+      "patient_id": "user_1",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 156,
+      "latency_e2e_seconds": 2.619912999914959,
+      "latency_graph_ms": 619.6985000278801,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_02",
+      "patient_id": "user_2",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 412,
+      "latency_e2e_seconds": 1.2177638000575826,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_02",
+      "patient_id": "user_2",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 3.2125470000319183,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_02",
+      "patient_id": "user_2",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 157,
+      "latency_e2e_seconds": 3.188619800028391,
+      "latency_graph_ms": 568.1781000457704,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_02",
+      "patient_id": "user_3",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 415,
+      "latency_e2e_seconds": 1.2680083999875933,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_02",
+      "patient_id": "user_3",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 2.251046699937433,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_02",
+      "patient_id": "user_3",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 158,
+      "latency_e2e_seconds": 2.5161413999740034,
+      "latency_graph_ms": 601.3958000112325,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_02",
+      "patient_id": "user_4",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 413,
+      "latency_e2e_seconds": 1.3334270999766886,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_02",
+      "patient_id": "user_4",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 3.033089100033976,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_02",
+      "patient_id": "user_4",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 155,
+      "latency_e2e_seconds": 3.3010072000324726,
+      "latency_graph_ms": 602.223000023514,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_02",
+      "patient_id": "user_5",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 421,
+      "latency_e2e_seconds": 1.1773195000132546,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_02",
+      "patient_id": "user_5",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 168,
+      "latency_e2e_seconds": 3.0511865000007674,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_02",
+      "patient_id": "user_5",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 136,
+      "latency_e2e_seconds": 2.7198585000587627,
+      "latency_graph_ms": 619.8902000905946,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_02",
+      "patient_id": "user_6",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 412,
+      "latency_e2e_seconds": 1.2729685000376776,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_02",
+      "patient_id": "user_6",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 167,
+      "latency_e2e_seconds": 3.037020599935204,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_02",
+      "patient_id": "user_6",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 135,
+      "latency_e2e_seconds": 3.2438420000253245,
+      "latency_graph_ms": 713.8199000619352,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_02",
+      "patient_id": "user_7",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 416,
+      "latency_e2e_seconds": 1.2367251999676228,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_02",
+      "patient_id": "user_7",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 166,
+      "latency_e2e_seconds": 1.9199038998922333,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_02",
+      "patient_id": "user_7",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 171,
+      "latency_e2e_seconds": 2.817277600057423,
+      "latency_graph_ms": 579.0272000012919,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_02",
+      "patient_id": "user_8",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 416,
+      "latency_e2e_seconds": 1.0976447999710217,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_02",
+      "patient_id": "user_8",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 3.029618800035678,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_02",
+      "patient_id": "user_8",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 156,
+      "latency_e2e_seconds": 3.2198232000228018,
+      "latency_graph_ms": 607.2633999865502,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_02",
+      "patient_id": "user_9",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 416,
+      "latency_e2e_seconds": 1.1925755999982357,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_02",
+      "patient_id": "user_9",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 2.0798577000387013,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_02",
+      "patient_id": "user_9",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 158,
+      "latency_e2e_seconds": 2.82276130001992,
+      "latency_graph_ms": 736.8405999150127,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_02",
+      "patient_id": "user_10",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 410,
+      "latency_e2e_seconds": 1.2267405999591574,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_02",
+      "patient_id": "user_10",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 166,
+      "latency_e2e_seconds": 3.070238500018604,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_02",
+      "patient_id": "user_10",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 155,
+      "latency_e2e_seconds": 3.2477574000367895,
+      "latency_graph_ms": 635.2532000746578,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_02",
+      "patient_id": "user_11",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 411,
+      "latency_e2e_seconds": 1.114614799967967,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_02",
+      "patient_id": "user_11",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 166,
+      "latency_e2e_seconds": 3.129640799947083,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_02",
+      "patient_id": "user_11",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 2.7903499000240117,
+      "latency_graph_ms": 619.377400027588,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_02",
+      "patient_id": "user_12",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 410,
+      "latency_e2e_seconds": 1.2325617000460625,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_02",
+      "patient_id": "user_12",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 168,
+      "latency_e2e_seconds": 2.4875108000123873,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_02",
+      "patient_id": "user_12",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 165,
+      "latency_e2e_seconds": 3.067373000085354,
+      "latency_graph_ms": 747.465799911879,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_02",
+      "patient_id": "user_13",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 415,
+      "latency_e2e_seconds": 1.409917899989523,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_02",
+      "patient_id": "user_13",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 168,
+      "latency_e2e_seconds": 1.8054707000264898,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_02",
+      "patient_id": "user_13",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 2.6136624000500888,
+      "latency_graph_ms": 701.4287000056356,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_02",
+      "patient_id": "user_14",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 418,
+      "latency_e2e_seconds": 1.2985957000637427,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_02",
+      "patient_id": "user_14",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 1.8143016000976786,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_02",
+      "patient_id": "user_14",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 157,
+      "latency_e2e_seconds": 3.289527100045234,
+      "latency_graph_ms": 680.8975000167266,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_02",
+      "patient_id": "user_15",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 413,
+      "latency_e2e_seconds": 1.1752813999773934,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_02",
+      "patient_id": "user_15",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 168,
+      "latency_e2e_seconds": 3.055854200036265,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_02",
+      "patient_id": "user_15",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 2.8331268000183627,
+      "latency_graph_ms": 744.960300042294,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_02",
+      "patient_id": "user_16",
+      "category": "epistemic_discrepancy",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 417,
+      "latency_e2e_seconds": 1.187430299934931,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_02",
+      "patient_id": "user_16",
+      "category": "epistemic_discrepancy",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 163,
+      "latency_e2e_seconds": 2.0444207000546157,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 0.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_02",
+      "patient_id": "user_16",
+      "category": "epistemic_discrepancy",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 159,
+      "latency_e2e_seconds": 3.386400099960156,
+      "latency_graph_ms": 686.4682000596076,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_03",
+      "patient_id": "user_1",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 493,
+      "latency_e2e_seconds": 1.7371402999851853,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_03",
+      "patient_id": "user_1",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 179,
+      "latency_e2e_seconds": 3.5168178000021726,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_03",
+      "patient_id": "user_1",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 215,
+      "latency_e2e_seconds": 3.233830300043337,
+      "latency_graph_ms": 590.1951999403536,
+      "reference_resolution": {
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_03",
+      "patient_id": "user_2",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 486,
+      "latency_e2e_seconds": 1.7588664999930188,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_03",
+      "patient_id": "user_2",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 175,
+      "latency_e2e_seconds": 3.1645686000119895,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_03",
+      "patient_id": "user_2",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 199,
+      "latency_e2e_seconds": 2.9176098000025377,
+      "latency_graph_ms": 747.7125000441447,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_03",
+      "patient_id": "user_3",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 495,
+      "latency_e2e_seconds": 2.0410564000485465,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_03",
+      "patient_id": "user_3",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 180,
+      "latency_e2e_seconds": 3.2442880000453442,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user3_sess_03",
+      "patient_id": "user_3",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 214,
+      "latency_e2e_seconds": 3.0985669000074267,
+      "latency_graph_ms": 605.5922999512404,
+      "reference_resolution": {
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_03",
+      "patient_id": "user_4",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 487,
+      "latency_e2e_seconds": 1.977807000046596,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_03",
+      "patient_id": "user_4",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 175,
+      "latency_e2e_seconds": 3.1917634999845177,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user4_sess_03",
+      "patient_id": "user_4",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 196,
+      "latency_e2e_seconds": 3.2319772000191733,
+      "latency_graph_ms": 641.707899980247,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_03",
+      "patient_id": "user_5",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 495,
+      "latency_e2e_seconds": 1.8966218000277877,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_03",
+      "patient_id": "user_5",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 175,
+      "latency_e2e_seconds": 3.2513509000418708,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user5_sess_03",
+      "patient_id": "user_5",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 177,
+      "latency_e2e_seconds": 2.771009299904108,
+      "latency_graph_ms": 610.6542999623343,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_03",
+      "patient_id": "user_6",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 487,
+      "latency_e2e_seconds": 1.9778748999815434,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_03",
+      "patient_id": "user_6",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 176,
+      "latency_e2e_seconds": 2.7174947999883443,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user6_sess_03",
+      "patient_id": "user_6",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 178,
+      "latency_e2e_seconds": 3.184099099948071,
+      "latency_graph_ms": 608.261700021103,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_03",
+      "patient_id": "user_7",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 496,
+      "latency_e2e_seconds": 1.1396456999937072,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_03",
+      "patient_id": "user_7",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 179,
+      "latency_e2e_seconds": 2.38542679999955,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user7_sess_03",
+      "patient_id": "user_7",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 215,
+      "latency_e2e_seconds": 1.8850654000416398,
+      "latency_graph_ms": 1.0181000689044595,
+      "reference_resolution": {
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_02",
+      "patient_id": "user_17",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 493,
+      "latency_e2e_seconds": 1.3720322999870405,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_02",
+      "patient_id": "user_17",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 180,
+      "latency_e2e_seconds": 2.6756183999823406,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_02",
+      "patient_id": "user_17",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 213,
+      "latency_e2e_seconds": 2.4732760000042617,
+      "latency_graph_ms": 1.01200002245605,
+      "reference_resolution": {
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user18_sess_02",
+      "patient_id": "user_18",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 490,
+      "latency_e2e_seconds": 2.0069796999450773,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user18_sess_02",
+      "patient_id": "user_18",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 175,
+      "latency_e2e_seconds": 3.071771200047806,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user18_sess_02",
+      "patient_id": "user_18",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 213,
+      "latency_e2e_seconds": 3.656497700023465,
+      "latency_graph_ms": 730.9303999645635,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user19_sess_02",
+      "patient_id": "user_19",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 490,
+      "latency_e2e_seconds": 1.7538787999656051,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user19_sess_02",
+      "patient_id": "user_19",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 177,
+      "latency_e2e_seconds": 3.2938703999388963,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user19_sess_02",
+      "patient_id": "user_19",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 200,
+      "latency_e2e_seconds": 2.725562399951741,
+      "latency_graph_ms": 654.3937000678852,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user20_sess_02",
+      "patient_id": "user_20",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 490,
+      "latency_e2e_seconds": 1.8167627999791875,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user20_sess_02",
+      "patient_id": "user_20",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 175,
+      "latency_e2e_seconds": 3.239328800002113,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user20_sess_02",
+      "patient_id": "user_20",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 212,
+      "latency_e2e_seconds": 3.27357709989883,
+      "latency_graph_ms": 594.1111999563873,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user21_sess_02",
+      "patient_id": "user_21",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 496,
+      "latency_e2e_seconds": 1.1726923000533134,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user21_sess_02",
+      "patient_id": "user_21",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 180,
+      "latency_e2e_seconds": 2.556999300024472,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user21_sess_02",
+      "patient_id": "user_21",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 216,
+      "latency_e2e_seconds": 2.5445633999770507,
+      "latency_graph_ms": 579.0010000346228,
+      "reference_resolution": {
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user22_sess_02",
+      "patient_id": "user_22",
+      "category": "telemetry_fusion",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 497,
+      "latency_e2e_seconds": 1.292994499905035,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user22_sess_02",
+      "patient_id": "user_22",
+      "category": "telemetry_fusion",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 180,
+      "latency_e2e_seconds": 2.724391800002195,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 0.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user22_sess_02",
+      "patient_id": "user_22",
+      "category": "telemetry_fusion",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 217,
+      "latency_e2e_seconds": 3.62331090006046,
+      "latency_graph_ms": 1164.829000015743,
+      "reference_resolution": {
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_03",
+      "patient_id": "user_8",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 567,
+      "latency_e2e_seconds": 1.972548000048846,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_03",
+      "patient_id": "user_8",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 120,
+      "latency_e2e_seconds": 7.685989600024186,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user8_sess_03",
+      "patient_id": "user_8",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 155,
+      "latency_e2e_seconds": 3.1702193999662995,
+      "latency_graph_ms": 644.1903000231832,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_03",
+      "patient_id": "user_9",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 569,
+      "latency_e2e_seconds": 1.4675080999732018,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_03",
+      "patient_id": "user_9",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 120,
+      "latency_e2e_seconds": 2.875184900010936,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user9_sess_03",
+      "patient_id": "user_9",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 158,
+      "latency_e2e_seconds": 2.7494131999555975,
+      "latency_graph_ms": 646.9038999639452,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_03",
+      "patient_id": "user_10",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 563,
+      "latency_e2e_seconds": 1.259796000085771,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_03",
+      "patient_id": "user_10",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 113,
+      "latency_e2e_seconds": 3.0297653999878094,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user10_sess_03",
+      "patient_id": "user_10",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 166,
+      "latency_e2e_seconds": 3.0048588999779895,
+      "latency_graph_ms": 620.1312000630423,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_03",
+      "patient_id": "user_11",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 565,
+      "latency_e2e_seconds": 1.3151341000339016,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_03",
+      "patient_id": "user_11",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 121,
+      "latency_e2e_seconds": 2.485044499975629,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user11_sess_03",
+      "patient_id": "user_11",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 2.5692453999072313,
+      "latency_graph_ms": 670.7846000790596,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_03",
+      "patient_id": "user_12",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 562,
+      "latency_e2e_seconds": 1.3571126000024378,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_03",
+      "patient_id": "user_12",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 121,
+      "latency_e2e_seconds": 2.71299590007402,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user12_sess_03",
+      "patient_id": "user_12",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 155,
+      "latency_e2e_seconds": 3.152818699949421,
+      "latency_graph_ms": 678.1637000385672,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_03",
+      "patient_id": "user_13",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 567,
+      "latency_e2e_seconds": 1.3187531000003219,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_03",
+      "patient_id": "user_13",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 116,
+      "latency_e2e_seconds": 2.522617199923843,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user13_sess_03",
+      "patient_id": "user_13",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 168,
+      "latency_e2e_seconds": 2.707734200055711,
+      "latency_graph_ms": 681.0414999490604,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_03",
+      "patient_id": "user_14",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 572,
+      "latency_e2e_seconds": 1.3414543999824673,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_03",
+      "patient_id": "user_14",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 121,
+      "latency_e2e_seconds": 2.551970599917695,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user14_sess_03",
+      "patient_id": "user_14",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 172,
+      "latency_e2e_seconds": 2.9972833999199793,
+      "latency_graph_ms": 616.4137999294326,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_03",
+      "patient_id": "user_15",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 565,
+      "latency_e2e_seconds": 1.324449299951084,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_03",
+      "patient_id": "user_15",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 121,
+      "latency_e2e_seconds": 2.566590999951586,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user15_sess_03",
+      "patient_id": "user_15",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 169,
+      "latency_e2e_seconds": 2.5011664000339806,
+      "latency_graph_ms": 618.9046000363305,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_03",
+      "patient_id": "user_16",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 576,
+      "latency_e2e_seconds": 1.3961882999865338,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_03",
+      "patient_id": "user_16",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 116,
+      "latency_e2e_seconds": 1.8541806999128312,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user16_sess_03",
+      "patient_id": "user_16",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 158,
+      "latency_e2e_seconds": 3.2190426000161096,
+      "latency_graph_ms": 768.3180999010801,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user21_sess_01",
+      "patient_id": "user_21",
+      "category": "distractor_noise",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 572,
+      "latency_e2e_seconds": 1.1022684999043122,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user21_sess_01",
+      "patient_id": "user_21",
+      "category": "distractor_noise",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 121,
+      "latency_e2e_seconds": 1.74278830003459,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user21_sess_01",
+      "patient_id": "user_21",
+      "category": "distractor_noise",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 172,
+      "latency_e2e_seconds": 2.587457500048913,
+      "latency_graph_ms": 769.5458999369293,
+      "reference_resolution": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_03",
+      "patient_id": "user_17",
+      "category": "doctor_audit",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 383,
+      "latency_e2e_seconds": 2.113588499953039,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_03",
+      "patient_id": "user_17",
+      "category": "doctor_audit",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 176,
+      "latency_e2e_seconds": 2.576900399988517,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user17_sess_03",
+      "patient_id": "user_17",
+      "category": "doctor_audit",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 221,
+      "latency_e2e_seconds": 2.5917835999280214,
+      "latency_graph_ms": 1.0094000026583672,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user18_sess_03",
+      "patient_id": "user_18",
+      "category": "doctor_audit",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 371,
+      "latency_e2e_seconds": 2.3181574000045657,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user18_sess_03",
+      "patient_id": "user_18",
+      "category": "doctor_audit",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 162,
+      "latency_e2e_seconds": 2.7082171000074595,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.3333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user18_sess_03",
+      "patient_id": "user_18",
+      "category": "doctor_audit",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 225,
+      "latency_e2e_seconds": 2.01369649998378,
+      "latency_graph_ms": 1.0170000605285168,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user19_sess_03",
+      "patient_id": "user_19",
+      "category": "doctor_audit",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 370,
+      "latency_e2e_seconds": 2.4706066999351606,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user19_sess_03",
+      "patient_id": "user_19",
+      "category": "doctor_audit",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 163,
+      "latency_e2e_seconds": 2.8766217000084,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user19_sess_03",
+      "patient_id": "user_19",
+      "category": "doctor_audit",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 221,
+      "latency_e2e_seconds": 2.67376689997036,
+      "latency_graph_ms": 1.0297999251633883,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user20_sess_03",
+      "patient_id": "user_20",
+      "category": "doctor_audit",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 365,
+      "latency_e2e_seconds": 2.2354929998982698,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user20_sess_03",
+      "patient_id": "user_20",
+      "category": "doctor_audit",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 157,
+      "latency_e2e_seconds": 2.774431199999526,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user20_sess_03",
+      "patient_id": "user_20",
+      "category": "doctor_audit",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 226,
+      "latency_e2e_seconds": 1.9924513000296429,
+      "latency_graph_ms": 1.01200002245605,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user21_sess_03",
+      "patient_id": "user_21",
+      "category": "doctor_audit",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 375,
+      "latency_e2e_seconds": 2.3320416000206023,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user21_sess_03",
+      "patient_id": "user_21",
+      "category": "doctor_audit",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 166,
+      "latency_e2e_seconds": 2.6281098999315873,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user21_sess_03",
+      "patient_id": "user_21",
+      "category": "doctor_audit",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 228,
+      "latency_e2e_seconds": 2.745575899956748,
+      "latency_graph_ms": 1.0212999768555164,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user22_sess_01",
+      "patient_id": "user_22",
+      "category": "doctor_audit",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 376,
+      "latency_e2e_seconds": 2.4622007000725716,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1": 0.3333
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.6667
+    },
+    {
+      "session_id": "eval_user22_sess_01",
+      "patient_id": "user_22",
+      "category": "doctor_audit",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 165,
+      "latency_e2e_seconds": 2.5911383000202477,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1": 0.3333
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.6667
+    },
+    {
+      "session_id": "eval_user22_sess_01",
+      "patient_id": "user_22",
+      "category": "doctor_audit",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 230,
+      "latency_e2e_seconds": 2.3120709999930114,
+      "latency_graph_ms": 0.3920999588444829,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    },
+    {
+      "session_id": "eval_user22_sess_03",
+      "patient_id": "user_22",
+      "category": "doctor_audit",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 378,
+      "latency_e2e_seconds": 2.2853216000366956,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user22_sess_03",
+      "patient_id": "user_22",
+      "category": "doctor_audit",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 168,
+      "latency_e2e_seconds": 1.9436772000044584,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user22_sess_03",
+      "patient_id": "user_22",
+      "category": "doctor_audit",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 230,
+      "latency_e2e_seconds": 2.5035088999429718,
+      "latency_graph_ms": 1.092500053346157,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 0.8
+    }
+  ]
+}

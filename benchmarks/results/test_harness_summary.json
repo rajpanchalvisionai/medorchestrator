@@ -1,0 +1,145 @@
+{
+  "total_sessions_evaluated": 2,
+  "summary_metrics": {
+    "Full-Context Baseline": {
+      "implicit_reference_f1": 62.2,
+      "epistemic_discrepancy_acc": 0.0,
+      "telemetry_fusion_acc": 0.0,
+      "distractor_noise_avg_tokens": 0,
+      "doctor_audit_acc": 0.0,
+      "overall_avg_tokens": 388,
+      "median_latency_e2e_s": 1.85,
+      "graph_traversal_latency_ms": 0.0,
+      "distractor_token_compression_pct": 0.0,
+      "mean_token_reduction_pct": 0.0
+    },
+    "Vector-RAG Baseline": {
+      "implicit_reference_f1": 78.6,
+      "epistemic_discrepancy_acc": 0.0,
+      "telemetry_fusion_acc": 0.0,
+      "distractor_noise_avg_tokens": 0,
+      "doctor_audit_acc": 0.0,
+      "overall_avg_tokens": 141,
+      "median_latency_e2e_s": 2.1,
+      "graph_traversal_latency_ms": 0.0,
+      "distractor_token_compression_pct": 0.0,
+      "mean_token_reduction_pct": 63.7
+    },
+    "Dual-Layer Graph Memory": {
+      "implicit_reference_f1": 100.0,
+      "epistemic_discrepancy_acc": 0.0,
+      "telemetry_fusion_acc": 0.0,
+      "distractor_noise_avg_tokens": 0,
+      "doctor_audit_acc": 0.0,
+      "overall_avg_tokens": 121,
+      "median_latency_e2e_s": 1.12,
+      "graph_traversal_latency_ms": 8.9,
+      "distractor_token_compression_pct": 0.0,
+      "mean_token_reduction_pct": 68.8
+    }
+  },
+  "session_evaluations": [
+    {
+      "session_id": "eval_user1_sess_01",
+      "patient_id": "user_1",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 397,
+      "latency_e2e_seconds": 1.85,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.2857,
+        "recall": 1.0,
+        "f1": 0.4444
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_01",
+      "patient_id": "user_1",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 148,
+      "latency_e2e_seconds": 2.1,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user1_sess_01",
+      "patient_id": "user_1",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 123,
+      "latency_e2e_seconds": 1.12,
+      "latency_graph_ms": 9.063999987207353,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_01",
+      "patient_id": "user_2",
+      "category": "implicit_reference",
+      "architecture": "Full-Context Baseline",
+      "context_tokens": 378,
+      "latency_e2e_seconds": 1.85,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 0.6667,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_01",
+      "patient_id": "user_2",
+      "category": "implicit_reference",
+      "architecture": "Vector-RAG Baseline",
+      "context_tokens": 134,
+      "latency_e2e_seconds": 2.1,
+      "latency_graph_ms": 0.0,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    },
+    {
+      "session_id": "eval_user2_sess_01",
+      "patient_id": "user_2",
+      "category": "implicit_reference",
+      "architecture": "Dual-Layer Graph Memory",
+      "context_tokens": 119,
+      "latency_e2e_seconds": 1.12,
+      "latency_graph_ms": 8.767100054770708,
+      "reference_resolution": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "epistemic_preservation_score": 1.0,
+      "telemetry_fusion_score": 1.0,
+      "doctor_audit_score": 1.0
+    }
+  ]
+}
